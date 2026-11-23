@@ -1,0 +1,161 @@
+theme: 'DockLike'
+styleConstants:
+- 'bg=#020608'
+- 'surface=#07161C'
+- 'hover=#0B2730'
+- 'line=#0F5664'
+- 'fg=#D8FBFF'
+- 'muted=#5E9FAB'
+- 'accent=#00E5FF'
+- 'accent2=#FF8A1F'
+- 'titleFont=Orbitron'
+- 'monoFont=Share Tech Mono'
+- 'DockBackground=<SolidColorBrush Color="#E8020608" />'
+- 'DockTopGap=3'
+- 'DockBottomGap=3'
+controlStyles:
+- target: 'Grid#IconPanel > Border#BackgroundElement, Taskbar.TaskListLabeledButtonPanel > Border#BackgroundElement'
+  styles:
+  - 'BorderThickness=0'
+  - 'CornerRadius=10'
+- target: 'Taskbar.TaskListButtonPanel > Grid > Border#BackgroundElement, Taskbar.TaskListButtonPanel > Border#BackgroundElement'
+  styles:
+  - 'BorderThickness=0'
+  - 'CornerRadius=10'
+- target: 'Grid#IconPanel@RunningIndicatorStates > Rectangle#RunningIndicator, Taskbar.TaskListLabeledButtonPanel@RunningIndicatorStates > Rectangle#RunningIndicator'
+  styles:
+  - 'MaxWidth=14'
+  - 'MaxHeight=3'
+  - 'RadiusX=1.5'
+  - 'RadiusY=1.5'
+  - 'Fill@InactiveRunningIndicator=$muted'
+  - 'Fill@ActiveRunningIndicator=$accent'
+  - 'Margin=0,0,0,2'
+- target: 'Grid#IconPanel > TextBlock#LabelControl, Taskbar.TaskListLabeledButtonPanel > TextBlock#LabelControl'
+  styles:
+  - 'FontFamily=$monoFont'
+  - 'FontSize=12'
+  - 'Foreground=$fg'
+- target: 'TextBlock#SearchBoxTextBlock'
+  styles:
+  - 'FontFamily=$monoFont'
+  - 'Foreground=$muted'
+- target: 'SearchUx.SearchUI.SearchButtonControl > Grid > SearchUx.SearchUI.SearchIconButton > SearchUx.SearchUI.SearchButtonRootGrid#SearchBoxButtonRootPanel > Grid > Border#BackgroundElement, SearchUx.SearchUI.SearchButtonControl > Grid > SearchUx.SearchUI.SearchIconButton > SearchUx.SearchUI.SearchButtonRootGrid#SearchBoxButtonRootPanel > Border#BackgroundElement'
+  styles:
+  - 'Background=$surface'
+  - 'BorderThickness=0'
+  - 'CornerRadius=16'
+- target: 'TextBlock#TimeInnerTextBlock'
+  styles:
+  - 'FontFamily=$titleFont'
+  - 'FontWeight=Bold'
+  - 'FontSize=18'
+  - 'Foreground=$fg'
+- target: 'TextBlock#DateInnerTextBlock'
+  styles:
+  - 'Visibility=Collapsed'
+- target: 'SystemTray.AdaptiveTextBlock#LanguageInnerTextBlock > TextBlock#InnerTextBlock'
+  styles:
+  - 'FontFamily=$monoFont'
+  - 'FontSize=11'
+- target: 'SystemTray.ImageIconContent > Grid#ContainerGrid > Image'
+  styles:
+  - 'Opacity=0.95'
+- target: 'Taskbar.FlyoutFrame > Windows.UI.Xaml.Controls.Canvas#HoverFlyoutCanvas > Windows.UI.Xaml.Controls.Grid#HoverFlyoutGrid > Windows.UI.Xaml.Controls.ContentPresenter#HoverFlyoutContent > Taskbar.TaskItemThumbnailList > Microsoft.UI.Xaml.Controls.ItemsRepeater#TaskItemThumbnailListRepeater > Taskbar.TaskItemThumbnailView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.TextBlock#DisplayNameTextBlock'
+  styles:
+  - 'FontFamily=$monoFont'
+  - 'FontSize=11'
+- target: 'MenuFlyoutPresenter > Border'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=18'
+  - 'Padding=4,6,4,6'
+- target: 'MenuFlyoutPresenter'
+  styles:
+  - 'FontFamily=$monoFont'
+- target: 'Border#OverflowFlyoutBackgroundBorder'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=18'
+- target: 'ToolTip > ContentPresenter#LayoutRoot'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'CornerRadius=10'
+  - 'FontFamily=$monoFont'
+  - 'Foreground=$fg'
+- target: 'Grid#ConfirmatorMainGrid'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=22'
+- target: 'Windows.UI.Xaml.Controls.TextBlock#volumeLevelText'
+  styles:
+  - 'FontFamily=$titleFont'
+  - 'FontWeight=Bold'
+  - 'FontSize=18'
+- target: 'Windows.UI.Xaml.Shapes.Rectangle#HorizontalDecreaseRect'
+  styles:
+  - 'Fill=$fg'
+- target: 'Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect'
+  styles:
+  - 'Fill=#0E3440'
+- target: 'WindowsInternal.ComposableShell.Experiences.Switcher.AltTab > Grid#ModalRootGrid > Border#BackgroundElement'
+  styles:
+  - 'Background=#F2020608'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=28'
+- target: 'WindowsInternal.ComposableShell.Experiences.TextInput.Common.InputSwitcher > ContentControl > ContentPresenter > Grid'
+  styles:
+  - 'Background=$bg'
+  - 'CornerRadius=18'
+- target: 'SystemTray.TextIconContent > Grid#ContainerGrid > SystemTray.AdaptiveTextBlock#Base > TextBlock#InnerTextBlock'
+  styles:
+  - 'FontFamily=Gridline Icons, Segoe Fluent Icons, Settings Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets'
+- target: 'Taskbar.TaskbarFrame > Grid#RootGrid > Taskbar.TaskbarBackground > Grid'
+  styles:
+  - 'CornerRadius=10'
+  - 'BorderThickness=1'
+  - 'BorderBrush=$line'
+- target: 'SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel > TextBlock'
+  styles:
+  - 'FontFamily=$titleFont'
+  - 'FontWeight=Bold'
+  - 'FontSize=15'
+  - 'Foreground=$fg'
+- target: 'Windows.UI.Xaml.Controls.Border#SnapPickerBorder'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=22'
+- target: 'Windows.UI.Xaml.Controls.Border#SnapBarBorder'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=18'
+- target: 'WindowsInternal.ComposableShell.Experiences.Switcher.SnapAssistList > Grid > Border#ListBackground'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=22'
+- target: 'Taskbar.TaskListButton > Grid#IconPanel > Microsoft.UI.Xaml.Controls.ProgressBar#ProgressIndicator, Taskbar.TaskListButton > Taskbar.TaskListLabeledButtonPanel > Microsoft.UI.Xaml.Controls.ProgressBar#ProgressIndicator'
+  styles:
+  - 'Foreground=$accent2'
+  - 'MinHeight=3'
+- target: 'Microsoft.UI.Xaml.Controls.ProgressBar#ProgressIndicator > Grid#LayoutRoot > Border#ProgressBarRoot > Border > Grid > Rectangle#DeterminateProgressBarIndicator'
+  styles:
+  - 'Fill=$accent2'
+- target: 'Microsoft.UI.Xaml.Controls.ProgressBar#ProgressIndicator > Grid#LayoutRoot > Border#ProgressBarRoot > Border > Grid > Rectangle#ProgressBarTrack'
+  styles:
+  - 'Fill=#0E3440'
+themeResourceVariables:
+- ''

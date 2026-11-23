@@ -1,0 +1,17 @@
+.Default=tick.wav
+SystemNotification=notify.wav
+Notification.Default=notify.wav
+Notification.IM=message.wav
+Notification.Mail=message.wav
+MailBeep=message.wav
+Notification.Reminder=reminder.wav
+SystemAsterisk=info.wav
+SystemExclamation=warning.wav
+SystemHand=error.wav
+DeviceConnect=connect.wav
+DeviceDisconnect=disconnect.wav
+DeviceFail=error.wav
+LowBatteryAlarm=battery-low.wav
+CriticalBatteryAlarm=battery-low.wav
+WindowsUnlock=unlock.wav
+WindowsLogon=unlock.wav

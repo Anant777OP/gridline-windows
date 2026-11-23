@@ -1,0 +1,209 @@
+theme: ''
+disableNewStartMenuLayout: ''
+styleConstants:
+- 'bg=#020608'
+- 'surface=#061419'
+- 'hover=#0B2730'
+- 'line=#0F5664'
+- 'fg=#D8FBFF'
+- 'muted=#5E9FAB'
+- 'accent=#00E5FF'
+- 'accent2=#FF8A1F'
+- 'titleFont=Orbitron'
+- 'monoFont=Share Tech Mono'
+controlStyles:
+- target: 'Windows.UI.Xaml.Controls.TextBlock'
+  styles:
+  - 'FontFamily=Share Tech Mono, Gridline Icons, Segoe Fluent Icons, Settings Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets, Segoe UI Symbol, Segoe UI Emoji, Segoe UI'
+- target: 'Windows.UI.Xaml.Controls.FontIcon > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.TextBlock'
+  styles:
+  - 'FontFamily=Segoe Fluent Icons, Settings Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets'
+- target: 'Border#AcrylicBorder'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=28'
+- target: 'Border#AcrylicOverlay'
+  styles:
+  - 'Visibility=Collapsed'
+- target: 'Border#LayerBorder, Border#AccentLayerBorder'
+  styles:
+  - 'Visibility=Collapsed'
+- target: 'Border#AppBorder, Border#AccentAppBorder'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=28'
+- target: 'Border#StartDropShadow'
+  styles:
+  - 'CornerRadius=28'
+- target: 'Border#dropshadow'
+  styles:
+  - 'CornerRadius=28'
+- target: 'TextBlock#PinnedListHeaderText'
+  styles:
+  - 'FontFamily=$titleFont'
+  - 'FontWeight=Bold'
+  - 'FontSize=22'
+  - 'CharacterSpacing=60'
+  - 'Foreground=$fg'
+- target: 'Windows.UI.Xaml.Controls.TextBlock#AllAppsHeading'
+  styles:
+  - 'FontFamily=$titleFont'
+  - 'FontWeight=Bold'
+  - 'FontSize=22'
+  - 'CharacterSpacing=60'
+  - 'Foreground=$fg'
+- target: 'TextBlock#DisplayName, TextBlock#AppDisplayName'
+  styles:
+  - 'FontFamily=$monoFont'
+  - 'FontSize=11'
+  - 'Foreground=$fg'
+- target: 'TextBlock#AllListHeadingText, TextBlock#TopLevelSuggestionsListHeaderText'
+  styles:
+  - 'FontFamily=$titleFont'
+  - 'FontWeight=Bold'
+  - 'FontSize=22'
+  - 'CharacterSpacing=60'
+  - 'Foreground=$fg'
+- target: 'Button#Header > Border > TextBlock'
+  styles:
+  - 'FontFamily=$titleFont'
+  - 'FontWeight=Bold'
+  - 'FontSize=18'
+  - 'Foreground=$accent'
+- target: 'TextBlock#ShowAllAppsButtonText, TextBlock#ShowMorePinnedButtonText, TextBlock#PlaceholderTextContentPresenter, TextBlock#Title, TextBlock#Subtitle'
+  styles:
+  - 'FontFamily=$monoFont'
+- target: 'StartDocked.UserTileView'
+  styles:
+  - 'FontFamily=$monoFont'
+- target: 'StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement'
+  styles:
+  - 'Background=$surface'
+  - 'BorderThickness=0'
+  - 'CornerRadius=20'
+- target: 'Border#TaskbarSearchBackground'
+  styles:
+  - 'Background=$surface'
+  - 'BorderThickness=0'
+  - 'CornerRadius=20'
+- target: 'Grid#TopLevelSuggestionsRoot'
+  styles:
+  - 'Visibility=Collapsed'
+- target: 'Grid#TopLevelSuggestionsListHeader'
+  styles:
+  - 'Visibility=Collapsed'
+- target: 'Grid#ShowMoreSuggestions'
+  styles:
+  - 'Visibility=Collapsed'
+- target: 'StartMenu.FolderModal > Grid > Border'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=24'
+- target: 'MenuFlyoutPresenter > Border'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=18'
+- target: 'MenuFlyoutPresenter'
+  styles:
+  - 'FontFamily=$monoFont'
+- target: 'ToolTip > ContentPresenter#LayoutRoot'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'CornerRadius=10'
+  - 'FontFamily=$monoFont'
+- target: 'Windows.UI.Xaml.Controls.Primitives.ScrollBar'
+  styles:
+  - 'Opacity=0.5'
+- target: 'Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox'
+  styles:
+  - 'FontFamily=$monoFont'
+- target: 'Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox > Grid > Border#BorderElement'
+  styles:
+  - 'Background=$surface'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+themeResourceVariables:
+- 'ContentControlThemeFontFamily=Share Tech Mono'
+webContentStyles:
+- target: 'html, body, #rootContainer, #root'
+  styles:
+  - 'background: $bg !important'
+  - 'color: $fg !important'
+  - 'font-family: ''$monoFont'', ''Segoe Fluent Icons'', ''Segoe MDL2 Assets'', ''Segoe UI'', sans-serif !important'
+- target: 'body *:not(.cortanaFontIcon):not(.iconContent):not(.icon)'
+  styles:
+  - 'font-family: ''$monoFont'', ''Segoe Fluent Icons'', ''Segoe MDL2 Assets'', ''Segoe UI'', sans-serif !important'
+  - 'letter-spacing: 0 !important'
+- target: '.secondaryText, .details, .metadata, .caption, .subtitle, .additionalInfoText'
+  styles:
+  - 'color: $muted !important'
+- target: '.groupTitle, .groupTitleText, .groupHeader, #topHitHeader, .groupTitle *'
+  styles:
+  - 'font-family: ''$titleFont'', ''$monoFont'', ''Segoe UI'', sans-serif !important'
+  - 'color: $muted !important'
+  - 'text-transform: uppercase !important'
+  - 'letter-spacing: 0.08em !important'
+  - 'font-weight: 600 !important'
+- target: '.scope-tile > div, .scope-tile__button'
+  styles:
+  - 'background: transparent !important'
+  - 'border: 1px solid $line !important'
+  - 'border-radius: 999px !important'
+  - 'color: $fg !important'
+  - 'box-shadow: none !important'
+- target: '.scope-tile[aria-selected=''true''] > div, .scope-tile.selected > div, .scope-tile > div[aria-selected=''true''], .scope-tile > div[aria-checked=''true''], .scope-tile > div.selected'
+  styles:
+  - 'background: $accent !important'
+  - 'border-color: $accent !important'
+  - 'color: $bg !important'
+- target: '.scope-tile__title'
+  styles:
+  - 'font-family: ''$monoFont'', ''Segoe Fluent Icons'', ''Segoe MDL2 Assets'', ''Segoe UI'', sans-serif !important'
+- target: '.suggContainer, .suggestion:not(.groupHeader)'
+  styles:
+  - 'border-radius: 12px !important'
+  - 'border: none !important'
+  - 'box-shadow: none !important'
+- target: '.suggContainer:hover, .suggestion:not(.groupHeader):hover'
+  styles:
+  - 'background-color: $hover !important'
+- target: '.suggContainer[aria-selected=''true''], .suggContainer.selected, .suggContainer:focus-within, .suggestion[aria-selected=''true'']'
+  styles:
+  - 'background-color: $surface !important'
+  - 'box-shadow: inset 3px 0 0 $accent2 !important'
+- target: '#qfPreviewPane, .previewContainer, .preview-content-container'
+  styles:
+  - 'background: $surface !important'
+  - 'border: 1px solid $line !important'
+  - 'border-radius: 20px !important'
+  - 'box-shadow: none !important'
+- target: '#qfPreviewPane h1, #qfPreviewPane h2, #qfPreviewPane .title, .previewContainer h1, .previewContainer .title'
+  styles:
+  - 'font-family: ''$titleFont'', ''$monoFont'', ''Segoe UI'', sans-serif !important'
+  - 'color: $fg !important'
+- target: '#qfPreviewPane button, #qfPreviewPane [role=''button''], .previewContainer button, .previewContainer [role=''button'']'
+  styles:
+  - 'background: $bg !important'
+  - 'border: 1px solid $line !important'
+  - 'border-radius: 999px !important'
+  - 'color: $fg !important'
+  - 'box-shadow: none !important'
+- target: '.contextMenu, #menuContainer'
+  styles:
+  - 'background: $surface !important'
+  - 'border: 1px solid $line !important'
+  - 'border-radius: 12px !important'
+  - 'color: $fg !important'
+- target: '*'
+  styles:
+  - 'scrollbar-color: $line transparent !important'
+webContentCustomJs: ''

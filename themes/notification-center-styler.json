@@ -1,0 +1,442 @@
+{
+  "theme": "",
+  "styleConstants": [
+    "bg=#020608",
+    "surface=#061419",
+    "line=#0F5664",
+    "fg=#D8FBFF",
+    "muted=#5E9FAB",
+    "accent=#00E5FF",
+    "accent2=#FF8A1F",
+    "titleFont=Orbitron",
+    "monoFont=Share Tech Mono"
+  ],
+  "controlStyles": [
+    {
+      "target": "Windows.UI.Xaml.Controls.TextBlock",
+      "styles": [
+        "FontFamily=Share Tech Mono, Gridline Icons, Segoe Fluent Icons, Settings Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets, Segoe UI Symbol, Segoe UI Emoji, Segoe UI"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.FontIcon > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.TextBlock",
+      "styles": [
+        "FontFamily=Gridline Icons, Segoe Fluent Icons, Settings Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.FontIcon, FontIcon, Microsoft.UI.Xaml.Controls.FontIcon",
+      "styles": [
+        "FontFamily=Gridline Icons, Segoe Fluent Icons, Settings Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Wi-Fi] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Wi-Fi] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=WiFi] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=WiFi] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE701;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Bluetooth] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Bluetooth] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE702;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Airplane mode] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Airplane mode] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE709;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=VPN] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=VPN] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE705;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Night light] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Night light] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xF08C;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Accessibility] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Accessibility] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE776;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Mobile hotspot] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Mobile hotspot] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE704;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Live captions] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Live captions] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xED1E;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Nearby sharing] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Nearby sharing] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE72D;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Cast] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Cast] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xEC15;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Project] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Project] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xEBC6;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Energy saver] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Energy saver] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Battery saver] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Battery saver] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xF432;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#BrightnessPlayer",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE706;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "Button#FooterButton[AutomationProperties.Name=All settings] > ContentPresenter#ContentPresenter > Microsoft.UI.Xaml.Controls.AnimatedIcon#FooterButtonIcon, Button#FooterButton[AutomationProperties.Name=Settings] > ContentPresenter#ContentPresenter > Microsoft.UI.Xaml.Controls.AnimatedIcon#FooterButtonIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE713;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Studio effects] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Studio effects] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xF4A5;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Color profile] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon, ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Color profile] > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE790;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Microsoft.UI.Xaml.Controls.AnimatedIcon, Windows.UI.Xaml.Controls.Primitives.ToggleButton > Windows.UI.Xaml.Controls.ContentPresenter > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xE767;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#DoNotDisturbButtonIcon",
+      "styles": [
+        "Source:=",
+        "FallbackIconSource:=<muxc:FontIconSource xmlns:muxc=\"using:Microsoft.UI.Xaml.Controls\" Glyph=\"&#xF4BD;\" FontSize=\"16\" FontFamily=\"Gridline Icons, Segoe Fluent Icons\" />"
+      ]
+    },
+    {
+      "target": "TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=], TextBlock[Text=]",
+      "styles": [
+        "Visibility=Collapsed"
+      ]
+    },
+    {
+      "target": "Grid#NotificationCenterGrid",
+      "styles": [
+        "Background=$bg",
+        "BorderBrush=$line",
+        "BorderThickness=1",
+        "CornerRadius=28"
+      ]
+    },
+    {
+      "target": "Grid#CalendarCenterGrid",
+      "styles": [
+        "Background=$bg",
+        "BorderBrush=$line",
+        "BorderThickness=1",
+        "CornerRadius=28"
+      ]
+    },
+    {
+      "target": "Grid#ControlCenterRegion",
+      "styles": [
+        "Background=$bg",
+        "BorderBrush=$line",
+        "BorderThickness=1",
+        "CornerRadius=28"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion",
+      "styles": [
+        "Background=$bg",
+        "BorderBrush=$line",
+        "BorderThickness=1",
+        "CornerRadius=28"
+      ]
+    },
+    {
+      "target": "Border#ToastBackgroundBorder, Border#ToastBackgroundBorder2",
+      "styles": [
+        "Background=$bg",
+        "BorderBrush=$line",
+        "BorderThickness=1",
+        "CornerRadius=24"
+      ]
+    },
+    {
+      "target": "Border#JumpListRestyledAcrylic",
+      "styles": [
+        "Background=$bg",
+        "BorderBrush=$line",
+        "BorderThickness=1",
+        "CornerRadius=22"
+      ]
+    },
+    {
+      "target": "ActionCenter.FlexibleItemView",
+      "styles": [
+        "CornerRadius=20"
+      ]
+    },
+    {
+      "target": "ScrollViewer#CalendarControlScrollViewer",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "Border#CalendarHeaderMinimizedOverlay",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "ActionCenter.FocusSessionControl#FocusSessionControl > Grid#FocusGrid",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.Grid#L1Grid > Border",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "Grid#MediaTransportControlsRoot",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "ContentPresenter#PageContent",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "ContentPresenter#PageContent > Grid > Border",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot > ContentPresenter#PageHeader",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "ScrollViewer#ListContent",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "ActionCenter.FlexibleToastView#FlexibleNormalToastView",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "Grid#NotificationCenterTopBanner",
+      "styles": [
+        "Background=Transparent"
+      ]
+    },
+    {
+      "target": "TextBlock#NotificationsTextBlock",
+      "styles": [
+        "FontFamily=$titleFont",
+        "FontWeight=Bold",
+        "FontSize=20"
+      ]
+    },
+    {
+      "target": "Grid#GroupTitleGrid > TextBlock#Title",
+      "styles": [
+        "FontFamily=$titleFont",
+        "FontWeight=Bold",
+        "FontSize=15"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.TextBlock#AppNameText, TextBlock#SenderName",
+      "styles": [
+        "FontFamily=$monoFont"
+      ]
+    },
+    {
+      "target": "ActionCenter.FlexibleItemView, ActionCenter.FlexibleToastView, ActionCenter.NotificationContentView, ActionCenter.ToastContentView",
+      "styles": [
+        "FontFamily=$monoFont"
+      ]
+    },
+    {
+      "target": "ActionCenter.FocusSessionControl#FocusSessionControl",
+      "styles": [
+        "FontFamily=$monoFont"
+      ]
+    },
+    {
+      "target": "QuickActions.AccessibleToggleButton#ToggleButton, QuickActions.AccessibleToggleButton#SplitL2Button",
+      "styles": [
+        "CornerRadius=24"
+      ]
+    },
+    {
+      "target": "GridView#RootGridView",
+      "styles": [
+        "FontFamily=$monoFont"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#TitleText",
+      "styles": [
+        "FontFamily=$titleFont",
+        "FontWeight=Bold",
+        "FontSize=18"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText",
+      "styles": [
+        "FontFamily=$monoFont",
+        "FontSize=11"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage > Windows.UI.Xaml.Controls.Border",
+      "styles": [
+        "CornerRadius=14"
+      ]
+    },
+    {
+      "target": "Button#ClearAll",
+      "styles": [
+        "FontFamily=$monoFont"
+      ]
+    },
+    {
+      "target": "Button#ExpandCollapseButton",
+      "styles": [
+        "FontFamily=$monoFont"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Shapes.Rectangle#HorizontalDecreaseRect",
+      "styles": [
+        "Fill=$fg"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect",
+      "styles": [
+        "Fill=#0E3440"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb",
+      "styles": [
+        "Background=$fg"
+      ]
+    },
+    {
+      "target": "MenuFlyoutPresenter",
+      "styles": [
+        "Background=$bg",
+        "BorderBrush=$line",
+        "CornerRadius=18",
+        "FontFamily=$monoFont"
+      ]
+    },
+    {
+      "target": "JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
+      "styles": [
+        "CornerRadius=12"
+      ]
+    },
+    {
+      "target": "JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
+      "styles": [
+        "CornerRadius=12"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.Button[AutomationProperties.AutomationId=Microsoft.QuickAction.Battery], Button[AutomationProperties.AutomationId=Microsoft.QuickAction.Battery], Windows.UI.Xaml.Controls.Button[AutomationProperties.AutomationId = Microsoft.QuickAction.Battery], Button[AutomationProperties.AutomationId = Microsoft.QuickAction.Battery]",
+      "styles": [
+        "Visibility=Collapsed"
+      ]
+    },
+    {
+      "target": "Grid#ToastTitleBar > TextBlock#SenderName",
+      "styles": [
+        "FontFamily=$monoFont",
+        "Foreground=$accent"
+      ]
+    },
+    {
+      "target": "StackPanel#TextContentPanel > TextBlock[1]",
+      "styles": [
+        "FontFamily=$titleFont",
+        "FontWeight=Bold",
+        "FontSize=15"
+      ]
+    }
+  ],
+  "themeResourceVariables": [
+    "ContentControlThemeFontFamily=Share Tech Mono",
+    "ControlCornerRadius=20",
+    "OverlayCornerRadius=24"
+  ]
+}

@@ -1,0 +1,39 @@
+theme: ''
+backgroundTranslucentEffect: ''
+backgroundTranslucentEffectRegion: ''
+explorerFrameContainerHeight: 0
+styleConstants:
+- 'bg=#020608'
+- 'surface=#061419'
+- 'line=#0F5664'
+- 'fg=#D8FBFF'
+- 'muted=#5E9FAB'
+- 'accent=#00E5FF'
+- 'accent2=#FF8A1F'
+- 'titleFont=Orbitron'
+- 'monoFont=Share Tech Mono'
+controlStyles:
+- target: 'Microsoft.UI.Xaml.Controls.TextBlock, Windows.UI.Xaml.Controls.TextBlock'
+  styles:
+  - 'FontFamily=Share Tech Mono, Segoe Fluent Icons, Settings Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets, Segoe UI Symbol, Segoe UI Emoji, Segoe UI'
+- target: 'Microsoft.UI.Xaml.Controls.Grid#FileExplorerAddressBarGrid'
+  styles:
+  - 'CornerRadius=12'
+- target: 'MenuFlyoutPresenter > Border'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'BorderThickness=1'
+  - 'CornerRadius=16'
+- target: 'Microsoft.UI.Xaml.Controls.CommandBarOverflowPresenter > Microsoft.UI.Xaml.Controls.CommandBarOverflowPresenter'
+  styles:
+  - 'Background=$bg'
+- target: 'ToolTip'
+  styles:
+  - 'Background=$bg'
+  - 'BorderBrush=$line'
+  - 'CornerRadius=10'
+  - 'FontFamily=$monoFont'
+themeResourceVariables:
+- 'ContentControlThemeFontFamily=Share Tech Mono'
+xamlDiagnosticsHandling: 'alert'

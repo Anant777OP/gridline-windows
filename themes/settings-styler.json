@@ -1,0 +1,100 @@
+{
+  "theme": "",
+  "styleConstants": [
+    "bg=#020608",
+    "surface=#061419",
+    "line=#0F5664",
+    "fg=#D8FBFF",
+    "muted=#5E9FAB",
+    "accent=#00E5FF",
+    "accent2=#FF8A1F",
+    "titleFont=Orbitron",
+    "monoFont=Share Tech Mono"
+  ],
+  "controlStyles": [
+    {
+      "target": "Windows.UI.Xaml.Controls.TextBlock",
+      "styles": [
+        "FontFamily=Share Tech Mono, Settings Fluent Icons, Settings MDL2 Assets, Segoe Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets, Segoe UI Symbol, Segoe UI Emoji, Segoe UI"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Controls.FontIcon > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.TextBlock",
+      "styles": [
+        "FontFamily=Settings Fluent Icons, Settings MDL2 Assets, Segoe Fluent Icons, SysBatt Fluent Icons, Segoe MDL2 Assets, Segoe UI Symbol, Segoe UI Emoji"
+      ]
+    },
+    {
+      "target": "SystemSettings.View.RootPage > Grid#RootPageGrid",
+      "styles": [
+        "Background=$bg"
+      ]
+    },
+    {
+      "target": "Border#TitleBarBackground",
+      "styles": [
+        "Background=$bg"
+      ]
+    },
+    {
+      "target": "Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView",
+      "styles": [
+        "Background=$bg"
+      ]
+    },
+    {
+      "target": "Frame#PermanentNavRootFrame",
+      "styles": [
+        "Background=$bg"
+      ]
+    },
+    {
+      "target": "SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid",
+      "styles": [
+        "Background=$bg"
+      ]
+    },
+    {
+      "target": "Rectangle#SelectionIndicator",
+      "styles": [
+        "Fill=$accent"
+      ]
+    },
+    {
+      "target": "SystemSettings.View.SettingsExpander > Grid > SystemSettings.View.ExpanderToggleButton#ContainerButton > ContentPresenter#ContentPresenter",
+      "styles": [
+        "CornerRadius=14"
+      ]
+    },
+    {
+      "target": "SystemSettings.View.ButtonEntityItem > Button#ContainerButton > ContentPresenter#ContentPresenter",
+      "styles": [
+        "CornerRadius=14"
+      ]
+    },
+    {
+      "target": "TextBox#CommandSearchTextBox",
+      "styles": [
+        "CornerRadius=16"
+      ]
+    },
+    {
+      "target": "Windows.UI.Xaml.Shapes.Rectangle#ProgressBarIndicator",
+      "styles": [
+        "Fill=$accent2"
+      ]
+    },
+    {
+      "target": "ToolTip",
+      "styles": [
+        "Background=$bg",
+        "BorderBrush=$line",
+        "CornerRadius=10",
+        "FontFamily=$monoFont"
+      ]
+    }
+  ],
+  "themeResourceVariables": [
+    "ContentControlThemeFontFamily=Share Tech Mono"
+  ]
+}

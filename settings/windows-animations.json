@@ -1,0 +1,21 @@
+{
+  "minimize_restore": {
+    "minimize_animation": 1,
+    "restore_animation": 1,
+    "launch_animation": 1,
+    "random_effect": 0,
+    "effect_style": "swell",
+    "duration_ms": 320
+  },
+  "close": {
+    "close_animation": 1,
+    "hide_as_close": 1,
+    "random_effect": 0,
+    "effect_style": "glitch",
+    "duration_ms": 450
+  },
+  "window_switch": {
+    "switch_animation": 1,
+    "duration_ms": 300
+  }
+}
