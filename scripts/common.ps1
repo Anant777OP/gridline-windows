@@ -51,8 +51,34 @@ function Repair-SoundScheme([string]$scheme = '.GridlineSound') {
 # Locates Windhawk and where it stores mod settings (portable ini files or the registry).
 function Get-Windhawk {
     $dir = $null
+    $remember = Join-Path $DataDir 'windhawk-dir.txt'
     $proc = Get-Process windhawk -ErrorAction SilentlyContinue | Select-Object -First 1
     if ($proc -and $proc.Path) { $dir = Split-Path $proc.Path }
+    if (-not $dir -and $proc) {
+        # Windhawk running as admin hides its path from normal programs, but the limited
+        # "query image name" right is still granted.
+        if (-not ('WhPath' -as [type])) {
+            Add-Type -Namespace '' -Name WhPath -MemberDefinition @'
+[DllImport("kernel32.dll", SetLastError = true)] static extern IntPtr OpenProcess(uint a, bool i, int p);
+[DllImport("kernel32.dll", CharSet = CharSet.Unicode)] static extern bool QueryFullProcessImageNameW(IntPtr h, int f, System.Text.StringBuilder s, ref int n);
+[DllImport("kernel32.dll")] static extern bool CloseHandle(IntPtr h);
+public static string Get(int pid) {
+    IntPtr h = OpenProcess(0x1000, false, pid);
+    if (h == IntPtr.Zero) return null;
+    var sb = new System.Text.StringBuilder(1024); int n = sb.Capacity;
+    string r = QueryFullProcessImageNameW(h, 0, sb, ref n) ? sb.ToString() : null;
+    CloseHandle(h);
+    return r;
+}
+'@
+        }
+        $exe = [WhPath]::Get($proc.Id)
+        if ($exe) { $dir = Split-Path $exe }
+    }
+    if (-not $dir -and (Test-Path $remember)) {
+        $saved = (Get-Content $remember -ErrorAction SilentlyContinue | Select-Object -First 1)
+        if ($saved -and (Test-Path (Join-Path $saved 'windhawk.exe'))) { $dir = $saved }
+    }
     if (-not $dir) {
         foreach ($k in 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Windhawk',
                        'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Windhawk') {
@@ -62,6 +88,7 @@ function Get-Windhawk {
     }
     if (-not $dir -and (Test-Path "$env:ProgramFiles\Windhawk\windhawk.exe")) { $dir = "$env:ProgramFiles\Windhawk" }
     if (-not $dir) { return $null }
+    try { Set-Content -Path $remember -Value $dir -ErrorAction Stop } catch { }
 
     $portable = $false; $appData = Join-Path $env:ProgramData 'Windhawk'
     $ini = Join-Path $dir 'windhawk.ini'
@@ -177,7 +204,22 @@ function Set-ModDisabled($wh, [string]$ModId, [bool]$Disabled) {
 }
 
 function Restart-Windhawk($wh) {
-    if ($wh -and (Test-Path $wh.Exe)) { & $wh.Exe -restart -tray-only; Start-Sleep -Seconds 6 }
+    if (-not $wh -or -not (Test-Path $wh.Exe)) { return }
+    $proc = Get-Process windhawk -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($proc -and -not $proc.Path -and -not (Test-Admin)) {
+        # Windhawk runs as admin: restart it as admin too, so it keeps reaching every app.
+        try { Start-Process $wh.Exe -ArgumentList '-restart', '-tray-only' -Verb RunAs -ErrorAction Stop }
+        catch { Write-Warning 'Windhawk was not restarted (admin prompt declined). Restart it from its tray icon.' }
+    } else {
+        & $wh.Exe -restart -tray-only
+    }
+    Start-Sleep -Seconds 6
+}
+
+# Imports a .reg file. reg.exe reports success on its error stream, so judge it by the exit code.
+function Import-RegFile([string]$Path) {
+    $p = Start-Process reg.exe -ArgumentList 'import', "`"$Path`"" -Wait -PassThru -WindowStyle Hidden
+    return $p.ExitCode -eq 0
 }
 
 # Theme mods and the extra mod settings this project ships.

@@ -90,7 +90,7 @@ function Set-DesktopIni([string]$folder, [string]$iconPath) {
 if ($Restore) {
     foreach ($g in $desktopIcons.Keys) { Remove-Item "$explorerClsid\$g\DefaultIcon" -Recurse -Force -ErrorAction SilentlyContinue }
     foreach ($g in $classIcons.Keys) { Remove-Item "$classesClsid\$g\DefaultIcon" -Recurse -Force -ErrorAction SilentlyContinue }
-    foreach ($reg in Get-ChildItem $bk -Filter 'reg-*.reg' -ErrorAction SilentlyContinue) { & reg.exe import $reg.FullName 2>$null }
+    foreach ($reg in Get-ChildItem $bk -Filter 'reg-*.reg' -ErrorAction SilentlyContinue) { [void](Import-RegFile $reg.FullName) }
     foreach ($k in $knownFolders.Keys) {
         $ini = Join-Path $knownFolders[$k] 'desktop.ini'; $b = Join-Path $bk "$k.desktop.ini"; $none = Join-Path $bk "$k.none"
         if (Test-Path $b) {

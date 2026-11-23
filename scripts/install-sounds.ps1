@@ -15,7 +15,7 @@ $scheme = '.GridlineSound'
 $backup = Join-Path $BackupDir 'sounds-before.reg'
 
 if ($Restore) {
-    if (Test-Path $backup) { & reg.exe import $backup 2>$null | Out-Null }
+    if (Test-Path $backup) { [void](Import-RegFile $backup) }
     # Delete the scheme (also if the backup brought it back) so the mod stops reapplying it.
     Remove-Item "$root\Names\$scheme" -Recurse -Force -ErrorAction SilentlyContinue
     foreach ($ev in Get-ChildItem "$root\Apps\.Default" -ErrorAction SilentlyContinue) {
